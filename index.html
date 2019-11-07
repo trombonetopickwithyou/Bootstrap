@@ -2,23 +2,82 @@
 <!--
 	BootStrap tutorial file 
 	Reference: https://www.youtube.com/watch?v=2W03ZymI46g
-
 -->
 
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<title> Bootstrap the localhost way </title>
+		<title>Bootstrap localhost</title>
 
+		<style>
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: auto;
+			  background-color: #333;
+			}
+
+			li {
+			  float: left;
+			}
+
+			li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+			  background-color: #111;
+			}
+
+			.active {
+			  background-color: #4CAF50;
+			}
+		</style>
 		<!-- link the css files here -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-
 		<!--	optional theme <link rel="stylesheet" href="/css/bootstrap-theme.min.css">	-->
 
 	</head>
+
 	<body>
-		
-		<button class="btn btn-success" onclick="$(this).hide();"> Click me! </button>
+		<!-- add the navbar -->
+		<ul>
+		  <li><a href="#home">Home</a></li>
+		  <li><a href="#news">News</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		  <li><a href="#about">About</a></li>
+		  <li style="float:right"><a href="#search">Search</a></li>
+		</ul>
+
+		<div class="jumbotron text-center">
+		  <h1>Hello World</h1>
+		  <p>by Joshua Williams</p>
+		</div>
+		  
+		<div class="container">
+		  <div class="row">
+		    <div class="col-sm-4">
+		      <h3>Column 1</h3>
+		      <p>Example text, example example...</p>
+		      <p>Furthermore, example example example...</p>
+		    </div>
+		    <div class="col-sm-4">
+		      <h3>Column 2</h3>
+		      <p>This is also example text, por ejemplo...</p>
+		      <p>Also, example text is here for an example of what text may look like...</p>
+		    </div>
+		    <div class="col-sm-4">
+		      <h3>Column 3</h3>        
+		      <p>And third, example text is here as well...</p>
+		      <p>In conclusion, example text example text example example formatting yeah...</p>
+		    </div>
+		  </div>
+		</div>
 
 
 
@@ -27,7 +86,6 @@
 
 		<!-- JavaScript files should be linked at the bottom of the page -->
 		<script src="js/jquery.min.js"></script>
-
 		<!-- Latest compiled and minified JavaScript-->
 		<script src="js/bootstrap.min.js"></script>
 	</body>
